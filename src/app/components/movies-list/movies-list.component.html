@@ -1,0 +1,22 @@
+<p class="text" > {{result}} </p>
+
+<p class="question">Quel est le film le plus vieux ?</p>
+
+<div class='box' >
+    <ul *ngIf="movies.length > 0"> 
+         <div  *ngFor="let movie of movies" (click)="check(movie)" > 
+            <a >
+                <p class="titree">{{movie.primaryTitle}}</p>
+                <img class="picture" src="{{movie.image_url}}" alt="" srcset="">
+            </a>
+        </div>
+    </ul>
+</div>
+
+
+<div class="rejouer">
+    <button (click)="replay()" type="button" class="btn btn-primary">Rejouer</button>
+</div>
+
+<div *ngIf="movies.length == 0">La liste est en cours de chargement...</div>
+<!-- [routerLink]="'/movies/'+movie.tconst" -->

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.foote{
+    background-color: #A6A5A5;
+    // padding-top: 50px;
+    color: rgb(3, 3, 3);
+}
+
+.titre{
+    color: rgb(0, 0, 0);
+}
+
+.titi{
+    font-weight: bolder;
+    font-size: medium;
+}
+
+li{
+    background-color: #A6A5A561;
+    padding: 40px;
+}
+
+li:hover{
+    background-color: #B88F;
+    padding: 40px;
+}
